@@ -1,0 +1,37 @@
+CUSTOMER CHURN PREDICTION - RESULTS SUMMARY
+================================================================================
+
+Dataset Shape: (7043, 21)
+Churn Rate: 26.54%
+
+Model Performance:
+--------------------------------------------------------------------------------
+
+Logistic Regression:
+  Accuracy: 0.7970
+  F1 Score: 0.5879
+  ROC AUC: 0.8432
+
+Decision Tree:
+  Accuracy: 0.7544
+  F1 Score: 0.5057
+  ROC AUC: 0.7609
+
+Random Forest:
+  Accuracy: 0.7828
+  F1 Score: 0.5473
+  ROC AUC: 0.8129
+
+Gradient Boosting:
+  Accuracy: 0.7977
+  F1 Score: 0.5688
+  ROC AUC: 0.8446
+
+SVM:
+  Accuracy: 0.7864
+  F1 Score: 0.5446
+  ROC AUC: 0.7988
+
+
+Best Model: Gradient Boosting
+Best ROC AUC: 0.8446
