@@ -87,6 +87,18 @@ The primary objectives of this project are to:
 
 ---
 
+# ❓ Business Questions Answered
+
+This project helps answer key business questions such as:
+
+- Which customers are most likely to churn?
+- Which customer segments should receive retention campaigns?
+- Which customer attributes contribute most to churn?
+- Which services increase customer churn risk?
+- Which retention strategies can improve customer loyalty?
+
+---
+
 # 🏗 Machine Learning Workflow
 
 ![Workflow](plots/machinelearningworkflow.png)
