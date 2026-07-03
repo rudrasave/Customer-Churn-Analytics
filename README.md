@@ -183,6 +183,182 @@ Although customer churn depends on multiple interacting factors, several variabl
 
 ---
 
+# ⚙️ Feature Engineering
+
+Before training the machine learning models, several preprocessing and feature engineering steps were performed to improve data quality and model performance.
+
+The preprocessing pipeline included:
+
+- Handling missing values
+- Encoding categorical variables
+- Converting binary categorical features into numerical format
+- Standardizing numerical features where required
+- Splitting the dataset into training and testing sets
+- Preparing data for multiple classification algorithms
+
+These preprocessing steps ensured that the models received clean, structured, and machine-learning-ready data.
+
+---
+
+# 🤖 Machine Learning Models
+
+Multiple supervised machine learning algorithms were trained and evaluated to identify the most effective model for customer churn prediction.
+
+The following classification algorithms were implemented:
+
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
+- Gradient Boosting Classifier
+- Support Vector Machine (SVM)
+
+Each model was evaluated using multiple performance metrics rather than relying solely on accuracy.
+
+---
+
+# 📊 Model Comparison
+
+| Model | Accuracy | ROC-AUC | Performance |
+|--------|---------:|---------:|-------------|
+| Logistic Regression | 79.70% | 84.32% | Excellent Baseline |
+| Decision Tree | 75.44% | 76.09% | Moderate |
+| Random Forest | 78.28% | 81.29% | Strong |
+| ⭐ Gradient Boosting | **79.77%** | **84.46%** | **Best Overall** |
+| Support Vector Machine | 78.64% | 79.88% | Good |
+
+Although several models achieved similar accuracy, **Gradient Boosting** achieved the highest ROC-AUC score, making it the most reliable model for identifying customers at risk of churn.
+
+---
+
+# 🏆 Best Model Selection
+
+Gradient Boosting was selected as the final production model because it provided the strongest balance between:
+
+- Accuracy
+- Precision
+- Recall
+- ROC-AUC
+
+Unlike relying solely on prediction accuracy, ROC-AUC provides a better evaluation for customer churn datasets where class imbalance exists.
+
+The model was further optimized using hyperparameter tuning, resulting in improved predictive performance.
+
+---
+
+# 📈 ROC Curve Comparison
+
+![ROC Curves](plots/roc-curves.png)
+
+Receiver Operating Characteristic (ROC) curves were used to compare model performance across all classification algorithms.
+
+The comparison demonstrates that **Gradient Boosting consistently achieved the highest Area Under the Curve (AUC)**, indicating stronger discrimination between churned and retained customers.
+
+---
+
+# 📊 Confusion Matrix
+
+![Confusion Matrix](plots/confusion-matrix.png)
+
+The confusion matrix illustrates the model's prediction performance on unseen test data.
+
+It highlights:
+
+- Correctly predicted retained customers
+- Correctly predicted churned customers
+- False positives
+- False negatives
+
+This provides a more detailed understanding of model performance beyond simple accuracy.
+
+---
+
+# ⭐ Feature Importance
+
+![Feature Importance](plots/feature-importance.png)
+
+Feature importance analysis revealed the variables that contributed most significantly to customer churn prediction.
+
+The most influential features include:
+
+- Customer Tenure
+- Internet Service Type
+- Contract Type
+- Monthly Charges
+- Payment Method
+- Total Charges
+
+These variables provide valuable business insights into the factors that influence customer retention.
+
+---
+
+# 💡 Key Business Insights
+
+Analysis of customer behavior revealed several important patterns.
+
+### 📅 Customer Tenure
+
+Customers in their first year are significantly more likely to churn than long-term customers.
+
+---
+
+### 📄 Contract Type
+
+Month-to-month customers demonstrate substantially higher churn rates compared to customers on annual or two-year contracts.
+
+---
+
+### 🌐 Internet Service
+
+Customers subscribed to Fiber Optic internet services exhibit higher churn compared to DSL users, suggesting opportunities to improve customer satisfaction.
+
+---
+
+### 💳 Payment Method
+
+Customers using Electronic Check payment methods experience higher churn than customers using automatic payment options.
+
+---
+
+### 🛡 Value Added Services
+
+Customers without Online Security, Tech Support, or Device Protection are more likely to leave the service.
+
+---
+
+# 📈 Business Recommendations
+
+Based on the analytical findings, the following recommendations can help reduce customer churn.
+
+### 1️⃣ Improve New Customer Retention
+
+Develop onboarding programs targeting customers during their first 12 months.
+
+---
+
+### 2️⃣ Promote Long-Term Contracts
+
+Offer discounts and loyalty incentives encouraging customers to transition from month-to-month contracts to annual plans.
+
+---
+
+### 3️⃣ Improve Fiber Internet Experience
+
+Investigate service quality issues affecting Fiber Optic customers and implement customer satisfaction initiatives.
+
+---
+
+### 4️⃣ Encourage Automatic Payments
+
+Promote AutoPay incentives to reduce churn associated with Electronic Check payment methods.
+
+---
+
+### 5️⃣ Bundle Value-Added Services
+
+Increase adoption of Online Security, Tech Support, and Device Protection by offering bundled subscription packages.
+
+---
+
 # 💻 Technology Stack
 
 | Category | Technologies |
