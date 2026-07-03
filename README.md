@@ -1,4 +1,4 @@
-# 🤖 Customer Churn Prediction using Machine Learning
+# 🤖 Customer Churn Analytics & Retention Modeling
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn)
@@ -89,7 +89,7 @@ The primary objectives of this project are to:
 
 # 🏗 Machine Learning Workflow
 
-![Workflow](plots/machinelearningwrokflow.png)
+![Workflow](plots/machinelearningworkflow.png)
 
 This project follows a standard supervised machine learning pipeline:
 
